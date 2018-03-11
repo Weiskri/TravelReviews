@@ -1,0 +1,33 @@
+﻿@model TravelReviews.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <h2>Details</h2>
+    <div class="col-sm-2 col-md-4 details-content">
+        <div class="panel-body">
+            <p class="font-weight-light">
+                @Html.DisplayNameFor(model => model.PublishedDate) : @Html.DisplayFor(model => model.PublishedDate)<br />
+                @Html.DisplayNameFor(model => model.Recommended) : @Html.DisplayFor(model => model.Recommended)<br /><br /><br />
+                <h8>@Html.DisplayFor(model => model.Author) wrote about @Html.DisplayFor(model => model.Category.Name):</h8> <br /><br />
+                @Html.DisplayFor(model => model.Content)
+            </p>
+            <div class="details-icons">
+                <a href="@Url.Action("Edit", "Reviews", new { id = Model.ID })" class="btn glyph">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+                <a href="@Url.Action("Index", "Reviews")" class="btn glyph">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <i class="fas fa-quote-left"></i><h7>@Html.DisplayFor(model => model.Title)</h7><i class="fas fa-quote-right"></i>
+        </div></div>
+
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

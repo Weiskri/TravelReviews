@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row index">
+    <div class="col-md-12 background-image">
+        <div class="jumbotron">
+            <h1>Travel Reviews</h1>
+        </div>
+        <div class="jumbotron site-description">
+            <button type="button" class="btn btn-primary">Read Reviews, get tips, and plan your vacation!</button>
+        </div>
+    </div>
+</div>
+<div class="row image-gallery-header">
+    <div class="col-md-12">
+        <h5>Cool Destinations</h5>
+    </div>
+</div>
+<div class="row image-gallery">
+    <div class="col">
+        <ul>
+            <li><img id="barcelona" src="~/Content/Images/barcelona thumb.jpg"></li>
+            <li><img id="prague" src="~/Content/Images/prague thumb.jpg"></li>
+            <li><img id="beijing" src="~/Content/Images/beijing thumb.jpg"></li>
+    </ul>
+
+</div>
+    </div>
+<div class="row menu-options-header">
+    <h5>Explore</h5>
+</div>
+<div class="row menu-options">
+    <div class="col-md-4 menu">
+        <div class="thumbnail menu-options">
+            <div class="caption">
+                <i class="fas fa-edit"></i><br />
+                <button type="button" class="btn btn-success">Write a Review<a href="/Reviews/Create"> <i class="fas fa-arrow-circle-right"></i></a></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 menu">
+        <div class="thumbnail menu-options">
+            <div class="caption">
+                <i class="fas fa-book"></i><br />
+                <button type="button" class="btn btn-success">Read Reviews<a href="/Reviews/Index"> <i class="fas fa-arrow-circle-right"></i></a></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 menu">
+        <div class="thumbnail menu-options">
+            <div class="caption">
+                <i class="fas fa-newspaper"></i><br />
+                <button type="button" class="btn btn-success">Browse Categories<a href="/Categories/Index"> <i class="fas fa-arrow-circle-right"></i></a></button>
+            </div>
+        </div>
+    </div>
+</div>
