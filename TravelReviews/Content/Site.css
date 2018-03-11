@@ -19,7 +19,9 @@
 
 }
 
-.background-image {
+/*Front page Index background image*/
+
+.background-image { 
     background-image: url('Images/amsterdam resize.jpg');
     height: 700px;
     padding: 0px;
@@ -52,10 +54,7 @@ h3 {
     font-family: 'Lato', 'Abel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
-.jumbotron.buttons {
-    z-index: 1;
-    margin-top: 0px;
-}
+
 .btn.btn-default {
     background-color: #c2c3c4;
     margin-right: 30px;
@@ -86,6 +85,7 @@ h3 {
     background-color: #60564b;
 }
 
+/*Site description Front Page -- site description is in the button*/
 .jumbotron.site-description {
     z-index: 1;
     margin-top: 20px;
@@ -97,6 +97,8 @@ h3 {
     opacity: .8;
     padding-left: 200px;
 }
+
+/*Navbar Styling*/
 
 .navbar-inverse .navbar-nav > li > a {
     font-family: 'Lato';
@@ -126,6 +128,8 @@ button.navbar-toggle {
     background-color: #0e0e0f;
 }
 
+/*Plane in the NavBar*/
+
 .navbar-inverse .navbar-brand {
     font-family: 'Lato';
     color: #cce1e8 !important;
@@ -143,6 +147,8 @@ button.navbar-toggle {
     align-self: flex-end;
 
 }
+
+/*Aligns glyphs on Reviews Index to the right*/
 span {
     text-align: right;
 }
@@ -151,6 +157,7 @@ span {
     color: #a2dbef;
 }
 
+/*Controls Reviews Index layout*/
 div.thumbnail {
     text-align: center;
     background: none;
@@ -164,7 +171,7 @@ div.thumbnail {
     border-right: 0px;
     border-bottom: 5px solid #7a5b3d;
 }
-
+/*Front page Index Glyphs*/
 div.thumbnail.menu-options {
     text-align: center;
     background: none;
@@ -219,6 +226,7 @@ col-md-10.details-content {
     padding-bottom: 50px;
 }
 
+/*Controls panels, which are used on Details page for Rviews*/
 .panel-body {
     text-align: center;
     border-bottom: 2px solid #7a5b3d;
@@ -261,6 +269,7 @@ ul {
     list-style-type: none;
 }
 
+/*Image gallery on Front Index page*/
 li img {
     /*-webkit-filter: sepia(.7);
     filter: sepia(.7);*/
@@ -374,6 +383,8 @@ li img {
     display: none;
     text-align: center;
 }
+
+/*Font Awesome -- others throughout CSS, this is really disorganized*/
 .fas.fa-quote-left {
     color: #baf0fc;
     opacity: .1;
@@ -396,6 +407,7 @@ li img {
     margin-bottom: 40px;
 }
 
+/*Delete, Create, and Edit Pages (Reviews section ONLY)*/
 .btn.btn-warning {
     margin-top: 20px;
     margin-right: 10px;
